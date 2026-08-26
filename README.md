@@ -1,107 +1,202 @@
 # Artificial Intelligence Lab Exercises
 
-A collection of Artificial Intelligence and Machine Learning laboratory exercises developed using Python, Jupyter Notebook, PyTorch, scikit-learn, Tkinter, Pygame, and related libraries.
+A collection of Artificial Intelligence and Machine Learning laboratory exercises completed using Python, Jupyter Notebook, PyTorch, scikit-learn, Pygame, Tkinter, and related libraries.
 
-The repository covers classical AI search techniques, constraint satisfaction, machine learning algorithms, neural networks, and deep learning concepts.
+The repository covers classical AI algorithms, search techniques, constraint satisfaction, machine learning, neural networks, and introductory deep learning concepts.
 
 ## Lab Contents
 
-| Lab       | Topic                                    | Files                                                                            |
-| --------- | ---------------------------------------- | -------------------------------------------------------------------------------- |
-| **Lab 1** | Search and Backtracking Algorithms       | Maze solver, Sudoku solver, Dijkstra route finder                                |
-| **Lab 2** | Adversarial Search, Backtracking and CSP | Minimax Tic-Tac-Toe, tree backtracking, constraint-satisfaction graph colouring  |
-| **Lab 3** | Graph Data and Recommendation            | Synthetic research-paper network generation and similarity-based recommendations |
-| **Lab 4** | Classical Machine Learning Similarity    | Jaccard similarity, cosine similarity, TF-IDF and KNN                            |
-| **Lab 5** | Naive Bayes and Probabilistic Models     | Gaussian Naive Bayes classification and Bayesian Network examples                |
-| **Lab 6** | Support Vector Machines                  | Hard-margin, soft-margin and kernel-based SVM implementations                    |
-| **Lab 7** | Introduction to PyTorch                  | Tensors, autograd, neural networks, data loaders and model training              |
-| **Lab 8** | Neural Network Classification            | Titanic survival analysis and prediction using PyTorch                           |
-| **Lab 9** | Convolutional Neural Networks            | CNN architecture and fundamental convolution concepts                            |
+| Lab       | Topic                                          | Main Exercises                                              |
+| --------- | ---------------------------------------------- | ----------------------------------------------------------- |
+| **Lab 1** | Search and Backtracking Algorithms             | Maze solving, Sudoku solving, Dijkstra shortest-path search |
+| **Lab 2** | Adversarial Search and Constraint Satisfaction | Minimax, backtracking, graph colouring and CSP              |
+| **Lab 3** | Graph Data and Recommendations                 | Research-paper network generation and graph visualisation   |
+| **Lab 4** | Similarity and Machine Learning                | Jaccard similarity, cosine similarity, TF-IDF and KNN       |
+| **Lab 5** | Probabilistic Machine Learning                 | Naive Bayes classification and Bayesian Networks            |
+| **Lab 6** | Support Vector Machines                        | SVM classification, margins and kernel methods              |
+| **Lab 7** | PyTorch Fundamentals                           | Tensors, autograd, neural networks and training             |
+| **Lab 8** | Neural Network Classification                  | Titanic survival prediction using PyTorch                   |
+| **Lab 9** | Convolutional Neural Networks                  | CNN fundamentals, convolution and feature extraction        |
 
 ## Repository Structure
 
-### LAB 1
+```text
+AI-LABS/
+│
+├── LAB 1/
+│   ├── maze_solver.py
+│   ├── sudoku_solver.py
+│   └── dijkstra_route_finder.py
+│
+├── LAB 2/
+│   ├── adversarial_search.py
+│   ├── backtracking.py
+│   ├── csp_graph_coloring.py
+│   └── backtracking_report.docx
+│
+├── LAB 3/
+│   ├── network_generator.ipynb
+│   ├── network_data.json
+│   ├── network_visualization.html
+│   └── lab_report.ipynb
+│
+├── LAB 4/
+│   ├── similarity_analysis.ipynb
+│   └── research_papers_network.csv
+│
+├── LAB 5/
+│   ├── naive_bayes_classification.ipynb
+│   ├── dataset.csv
+│   └── bayesian_network.py
+│
+├── LAB 6/
+│   └── svm.ipynb
+│
+├── LAB 7/
+│   └── pytorch_fundamentals.ipynb
+│
+├── LAB 8/
+│   ├── titanic_neural_network.ipynb
+│   └── titanic.csv
+│
+├── LAB 9/
+│   └── cnn.ipynb
+│
+├── .gitignore
+└── README.md
+```
 
-`import pygame.py`
-Visual maze-solving exercise.
+## Lab 1: Search and Backtracking Algorithms
 
-`second.py`
-Sudoku solver using backtracking with Pygame visualisation.
+### `maze_solver.py`
 
-`third.py`
-Interactive route-finding application using Dijkstra's shortest-path algorithm.
+Visual maze-solving exercise demonstrating search and path-finding concepts.
 
-### LAB 2
+### `sudoku_solver.py`
 
-`adversial-serach.py`
-Tic-Tac-Toe application where the AI selects moves using the Minimax algorithm with alpha-beta pruning.
+Sudoku solver using the backtracking algorithm with a graphical Pygame interface.
 
-`backtrack.py`
-Interactive tree-search and backtracking visualisation.
+### `dijkstra_route_finder.py`
 
-`csp.py`
+Interactive route-finding exercise implementing Dijkstra's shortest-path algorithm.
+
+## Lab 2: Adversarial Search and Constraint Satisfaction
+
+### `adversarial_search.py`
+
+Tic-Tac-Toe implementation where the computer selects moves using the Minimax algorithm and adversarial search techniques.
+
+### `backtracking.py`
+
+Interactive exercise demonstrating backtracking and systematic search.
+
+### `csp_graph_coloring.py`
+
 Constraint Satisfaction Problem implementation using graph colouring and backtracking.
 
-`IMPLEMENTATION OF BACKTRACKING ALGORITHM.docx`
-Lab report covering the backtracking implementation.
+### `backtracking_report.docx`
 
-### LAB 3
+Supporting report explaining the implementation and concepts behind the backtracking algorithm.
 
-`network_generator.ipynb`
-Generates a synthetic research-paper network and explores relationships between papers, domains and methodologies.
+## Lab 3: Graph Data and Recommendations
 
-`network_data.json`
-Generated graph dataset used by the lab.
+### `network_generator.ipynb`
 
-`index.html`
-Browser-based visualisation of the generated network.
+Generates and analyses a synthetic research-paper network containing relationships between papers and research attributes.
 
-`lab 3 report.docx`
-Lab report and supporting documentation.
+### `network_data.json`
 
-### LAB 4
+Graph data generated and used by the network exercise.
 
-`lab.ipynb`
-Explores Jaccard similarity, cosine similarity, TF-IDF vectorisation and nearest-neighbour techniques for research-paper similarity.
+### `network_visualization.html`
 
-`research_papers_network.csv`
-Dataset used by the notebook.
+Browser-based visualisation of the generated research network.
 
-### LAB 5
+### `lab_3_report.docx`
 
-`Naive-Bayesian-Classification-main/cancer.ipynb`
-Machine Learning lab covering Gaussian Naive Bayes classification, data preprocessing and classification evaluation.
+Supporting documentation and report for Lab 3.
 
-`Naive-Bayesian-Classification-main/dataset.csv`
+## Lab 4: Similarity Analysis
+
+### `similarity_analysis.ipynb`
+
+Explores similarity and recommendation techniques including:
+
+* Jaccard similarity
+* Cosine similarity
+* TF-IDF vectorisation
+* K-Nearest Neighbours
+* Research-paper similarity analysis
+
+### `research_papers_network.csv`
+
+Dataset used for similarity analysis and experimentation.
+
+## Lab 5: Naive Bayes and Bayesian Networks
+
+### `naive_bayes_classification.ipynb`
+
+Machine Learning exercise using Gaussian Naive Bayes for classification, including data preprocessing, model training and evaluation.
+
+### `dataset.csv`
+
 Dataset used for the classification exercise.
 
-`Naive-Bayesian-Classification-main/main.py`
-Example Bayesian Network implementation using probabilistic graphical models.
+### `bayesian_network.py`
 
-### LAB 6
+Python implementation demonstrating Bayesian Networks and probabilistic relationships between variables.
 
-`lab.ipynb`
-Support Vector Machine exercises covering separating hyperplanes, maximum margins, support vectors, soft margins and kernel methods.
+## Lab 6: Support Vector Machines
 
-### LAB 7
+### `svm.ipynb`
 
-`code-part1.ipynb`
-Introduction to PyTorch including tensors, tensor operations, computation graphs, automatic differentiation, multilayer neural networks, data loaders and training loops.
+Support Vector Machine exercises covering concepts such as:
 
-### LAB 8
+* Separating hyperplanes
+* Maximum-margin classification
+* Support vectors
+* Soft-margin classification
+* Kernel methods
 
-`titanic_pytorch_merged_final.ipynb`
-Titanic passenger survival analysis and prediction using a PyTorch neural network.
+## Lab 7: PyTorch Fundamentals
 
-`titanic.csv`
-Titanic passenger dataset used by the notebook.
+### `pytorch_fundamentals.ipynb`
 
-### LAB 9
+Introduction to PyTorch and neural network development covering:
 
-`LAB 9.ipynb`
-Theory and explanation of Convolutional Neural Networks, including convolution, kernels, feature maps and CNN architecture.
+* Tensors
+* Tensor operations
+* Automatic differentiation
+* Computation graphs
+* Neural network layers
+* Data loaders
+* Model training
 
-## Technologies
+## Lab 8: Neural Network Classification
+
+### `titanic_neural_network.ipynb`
+
+Titanic passenger survival analysis and prediction using a neural network built with PyTorch.
+
+The notebook covers data preprocessing, model creation, training and prediction.
+
+### `titanic.csv`
+
+Titanic passenger dataset used for model training and evaluation.
+
+## Lab 9: Convolutional Neural Networks
+
+### `cnn.ipynb`
+
+Introduction to Convolutional Neural Networks and their core concepts, including:
+
+* Convolution operations
+* Kernels and filters
+* Feature maps
+* CNN architecture
+* Feature extraction
+
+## Technologies Used
 
 * Python
 * Jupyter Notebook
@@ -110,12 +205,11 @@ Theory and explanation of Convolutional Neural Networks, including convolution, 
 * Pandas
 * NumPy
 * Matplotlib
-* Tkinter
 * Pygame
+* Tkinter
 * pgmpy
-* CVXOPT
 
-## Running the Exercises
+## Running the Project
 
 Clone the repository:
 
@@ -124,18 +218,23 @@ git clone https://github.com/dilasha68/AI-LABS.git
 cd AI-LABS
 ```
 
-Install the libraries required by the individual labs as needed.
-
-Python scripts can be executed with:
+Python exercises can be executed using:
 
 ```bash
 python filename.py
 ```
 
-Jupyter notebooks can be opened using Jupyter Notebook, JupyterLab, VS Code, or Google Colab.
+Jupyter Notebook exercises can be opened using:
 
-Some Lab 1 and Lab 2 exercises use graphical interfaces and therefore require a desktop environment.
+* Jupyter Notebook
+* JupyterLab
+* Visual Studio Code
+* Google Colab
+
+Required Python libraries vary between labs and can be installed as needed using `pip`.
+
+Some exercises use graphical interfaces through Pygame or Tkinter and therefore require a desktop environment.
 
 ## About
 
-This repository contains Artificial Intelligence coursework covering search algorithms, constraint satisfaction, machine learning, graph-based data, neural networks and deep learning through practical Python and Jupyter exercises.
+This repository contains practical Artificial Intelligence coursework covering classical search algorithms, constraint satisfaction, graph-based data, machine learning, probabilistic models, neural networks and deep learning fundamentals.
